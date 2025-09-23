@@ -3,50 +3,46 @@ from random import randint
 
 from pydantic import BaseModel
 
+from competitor_flow.crews.competitor_crew.competitor_crew import CompetitorCrew
 from crewai.flow import Flow, listen, start
 
-from competitor_flow.crews.poem_crew.poem_crew import PoemCrew
+
+class CompetitorState(BaseModel):
+    competitor: str = ""
+    report: str = ""
 
 
-class PoemState(BaseModel):
-    sentence_count: int = 1
-    poem: str = ""
-
-
-class PoemFlow(Flow[PoemState]):
+class CompetitorFlow(Flow[CompetitorState]):
 
     @start()
-    def generate_sentence_count(self):
-        print("Generating sentence count")
-        self.state.sentence_count = randint(1, 5)
+    def ask_competitor(self):
+        """
+        Asks the user the competitor they want to research.
+        """
+        competitor = input("Enter the competitor you want to research: ")
+        self.state.competitor = competitor
 
-    @listen(generate_sentence_count)
-    def generate_poem(self):
-        print("Generating poem")
+    @listen(ask_competitor)
+    def generate_competitor_report(self):
+        print("Generating competitor report")
         result = (
-            PoemCrew()
+            CompetitorCrew()
             .crew()
-            .kickoff(inputs={"sentence_count": self.state.sentence_count})
+            .kickoff(inputs={"competitor": self.state.competitor})
         )
 
-        print("Poem generated", result.raw)
-        self.state.poem = result.raw
-
-    @listen(generate_poem)
-    def save_poem(self):
-        print("Saving poem")
-        with open("poem.txt", "w") as f:
-            f.write(self.state.poem)
+        print("Competitor report generated", result.raw)
+        self.state.report = result.raw
 
 
 def kickoff():
-    poem_flow = PoemFlow()
-    poem_flow.kickoff()
+    competitor_flow = CompetitorFlow()
+    competitor_flow.kickoff()
 
 
 def plot():
-    poem_flow = PoemFlow()
-    poem_flow.plot()
+    competitor_flow = CompetitorFlow()
+    competitor_flow.plot()
 
 
 if __name__ == "__main__":

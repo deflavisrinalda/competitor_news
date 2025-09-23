@@ -2,9 +2,11 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai.agents.agent_builder.base_agent import BaseAgent
 from typing import List
-# If you want to run a snippet of code before or after the crew starts,
-# you can use the @before_kickoff and @after_kickoff decorators
-# https://docs.crewai.com/concepts/crews#example-crew-class-with-decorators
+from competitor_flow.tools.custom_tool import DuckDuckGoSearchTool
+from competitor_flow.tools.file_write_tool import FileWriterTool
+from crewai import LLM
+
+llm = LLM(model="azure/gpt-4o")
 
 @CrewBase
 class CompetitorCrew():
@@ -22,15 +24,19 @@ class CompetitorCrew():
     @agent
     def researcher(self) -> Agent:
         return Agent(
-            config=self.agents_config['researcher'], # type: ignore[index]
-            verbose=True
+            config=self.agents_config['researcher'],
+            verbose=True,
+            tools = [DuckDuckGoSearchTool()],
+            llm=llm
         )
 
     @agent
     def analyst(self) -> Agent:
         return Agent(
             config=self.agents_config['analyst'], # type: ignore[index]
-            verbose=True
+            verbose=True,
+            tools = [FileWriterTool()],
+            llm=llm
         )
 
     # To learn more about structured task outputs,

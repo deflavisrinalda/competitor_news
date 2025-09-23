@@ -1,6 +1,6 @@
 research_news:
   description: >
-    Find the 5 most recent and relevant news about "{company}" from the last {days} days
+    Find the 5 most recent and relevant news about {competitor} from the last days
     using only search results (title, snippet, source, URL). Avoid duplicates; prefer reputable sources and official press releases. Work in English.
   agent: researcher
   expected_output: |
@@ -15,7 +15,7 @@ analyze_and_save:
       news_table ([[Title, Date, Source, URL]]).
     Then **call the FileWriterTool** to save this JSON string to:
       directory="reports"
-      filename="{today}_{company_sanitized}.json"
+      filename="{competitor}.json"
     The JSON you save must exactly match the returned content. Do not fabricate beyond provided metadata.
   agent: analyst
   context:
