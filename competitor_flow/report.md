@@ -1,23 +1,23 @@
 {
-  "executive_summary": "Deloitte's recent reports highlight the complexities faced in corporate travel forecasting, owing to rising costs and shifting priorities influenced by sustainability concerns. The organization is actively engaging in social care initiatives, emphasizing its commitment as a Knowledge Partner for relevant forums. However, it faces scrutiny from the Tennessee Attorney General regarding its diversity practices, which could affect its reputation and operations. Overall, while challenges abound, opportunities for strategic innovation and partnerships remain promising. Companies must navigate these dynamics carefully to leverage potential benefits while mitigating risks.",
+  "executive_summary": "IBM continues to innovate in computing with significant collaborations, particularly in AI and quantum computing. The recent partnership with BharatGen aims to enhance AI adoption in India through large language models. Additionally, IBM's agreement with AMD will focus on next-generation architectures integrating quantum computing. These strategic alliances highlight IBM's commitment to advancing technology solutions. However, there are inherent risks regarding dependency on collaboration success and the rapid technological pace which could outdate current developments.",
   "key_takeaways": [
-    "Deloitte's corporate travel forecast indicates significant challenges stemming from rising operational costs.",
-    "The company is actively participating in shaping the agenda for social care services as a Knowledge Partner.",
-    "An investigation into Deloitte's diversity and equity practices could impact its public image."
+    "IBM is accelerating AI adoption in India through collaboration with BharatGen.",
+    "The partnership with AMD focuses on next-generation quantum computing architectures.",
+    "Continued innovation positions IBM as a leader in both AI and quantum technology."
   ],
   "risks": [
-    "Ongoing investigations into diversity practices may undermine stakeholder trust and corporate reputation.",
-    "Unexpected shifts in company travel priorities due to economic fluctuations could decrease demand for Deloitte's advisory services."
+    "Dependence on the success of collaborations can pose risks to project timelines and outcomes.",
+    "Rapid technological advancements may render current projects obsolete if not adapted swiftly."
   ],
   "opportunities": [
-    "Enhancing corporate travel solutions to address sustainability concerns could position Deloitte as a leader in the evolving market.",
-    "Expanding its role in social care initiatives may strengthen its brand reputation and community engagement."
+    "Expand partnerships in emerging markets to foster AI adoption.",
+    "Invest in research and development for quantum computing to stay ahead in the industry."
   ],
   "news_table": [
-    ["Deloitte: Corporate Travel Forecast a Mixed Bag Amid Complex Conditions", "", "Hospitality Net", "https://www.hospitalitynet.org/news/4129018.html"],
-    ["Deloitte returns as exclusive Knowledge Partner for the second edition of Social Care Forum", "2023-09-24", "ME News 247", "https://menews247.com/deloitte-returns-as-exclusive-knowledge-partner-for-the-second-edition-of-social-care-forum-shaping-the-evolution-of-social-services/"],
-    ["Tennessee Attorney General investigating Deloitte over diversity practices", "", "WKRN News 2", "https://www.wkrn.com/news/tennessee-news/tennessee-attorney-general-investigating-deloitte-over-diversity-practices/"],
-    ["Deloitte's DEI program under scrutiny as investigation unfolds", "", "Yahoo", "https://www.yahoo.com/news/videos/tennessee-attorney-general-investigating-deloittes-033856167.html"],
-    ["Sagard and Unigestion combine to create a global leader in middle-market private equity investment solutions", "", "Newswire", "https://www.newswire.ca/news-releases/sagard-and-unigestion-combine-to-create-a-global-leader-in-middle-market-private-equity-investment-solutions-800472787.html"]
+    ["IBM Personal Computer", "", "Wikipedia", "https://en.wikipedia.org/wiki/IBM_Personal_Computer"],
+    ["IBM Newsroom", "2025-08-26", "IBM Newsroom", "https://newsroom.ibm.com/"],
+    ["IBM - Announcements", "2025-08-18", "IBM Newsroom", "https://newsroom.ibm.com/announcements"],
+    ["IBM Newsroom - Latest News", "2025-08-18", "IBM Newsroom", "https://newsroom.ibm.com/campaign"],
+    ["IBM Newsroom - Latest News", "2025-07-08", "IBM Newsroom", "https://newsroom.ibm.com/latest-news-corporate?l=100"]
   ]
 }
