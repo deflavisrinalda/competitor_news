@@ -1,0 +1,30 @@
+research_news:
+  description: >
+    Find the 5 most recent and relevant news about "{company}" from the last {days} days
+    using only search results (title, snippet, source, URL). Avoid duplicates; prefer reputable sources and official press releases. Work in English.
+  agent: researcher
+  expected_output: |
+    [
+      {"title":"string","date":"YYYY-MM-DD or empty","source":"string","url":"https://...","snippet":"1-3 sentences"}
+    ]
+
+analyze_and_save:
+  description: >
+    Using 'research_news' findings, produce ONLY valid JSON with:
+    - executive_summary (5-7 sentences), key_takeaways (3), risks (2), opportunities (2 with suggested action),
+      news_table ([[Title, Date, Source, URL]]).
+    Then **call the FileWriterTool** to save this JSON string to:
+      directory="reports"
+      filename="{today}_{company_sanitized}.json"
+    The JSON you save must exactly match the returned content. Do not fabricate beyond provided metadata.
+  agent: analyst
+  context:
+    - research_news
+  expected_output: |
+    {
+      "executive_summary":"string",
+      "key_takeaways":["string","string","string"],
+      "risks":["string","string"],
+      "opportunities":["string","string"],
+      "news_table":[["Title","Date","Source","URL"]]
+    }
