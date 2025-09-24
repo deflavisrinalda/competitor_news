@@ -1,23 +1,23 @@
 {
-  "executive_summary": "IBM continues to innovate in computing with significant collaborations, particularly in AI and quantum computing. The recent partnership with BharatGen aims to enhance AI adoption in India through large language models. Additionally, IBM's agreement with AMD will focus on next-generation architectures integrating quantum computing. These strategic alliances highlight IBM's commitment to advancing technology solutions. However, there are inherent risks regarding dependency on collaboration success and the rapid technological pace which could outdate current developments.",
+  "executive_summary": "Deloitte, a leading global professional services firm, is currently under investigation by the Tennessee Attorney General regarding its diversity practices, particularly in relation to its management of TennCare's eligibility system. This scrutiny arises amidst Deloitte's recent launch of an AI Infrastructure Center of Excellence aimed at enhancing AI data center services globally. Meanwhile, the firm's Corporate Travel Forecast indicates a changing dynamic in business travel patterns, with occasional travelers increasing while more seasoned travelers reduce their journeys. As the company navigates these challenges, it is essential to consider the potential impacts on its reputation and client relationships. Stakeholders should focus on reinforcing ethical practices and exploring AI-driven solutions to manage evolving market demands.",
   "key_takeaways": [
-    "IBM is accelerating AI adoption in India through collaboration with BharatGen.",
-    "The partnership with AMD focuses on next-generation quantum computing architectures.",
-    "Continued innovation positions IBM as a leader in both AI and quantum technology."
+    "Deloitte is under investigation for its diversity practices related to a significant state contract.",
+    "The launch of the AI Infrastructure Center of Excellence marks Deloitte's commitment to innovation in AI data services.",
+    "Trends in business travel are shifting, impacting how Deloitte may need to approach its corporate travel strategies."
   ],
   "risks": [
-    "Dependence on the success of collaborations can pose risks to project timelines and outcomes.",
-    "Rapid technological advancements may render current projects obsolete if not adapted swiftly."
+    "Reputational damage due to the ongoing investigation could result in loss of client trust and business.",
+    "Changes in business travel patterns may impact operational costs and client engagement strategies."
   ],
   "opportunities": [
-    "Expand partnerships in emerging markets to foster AI adoption.",
-    "Invest in research and development for quantum computing to stay ahead in the industry."
+    "Deloitte can strengthen its diversity and inclusion frameworks to not only mitigate investigation impacts but also to enhance its market positioning.",
+    "The establishment of the AI Infrastructure CoE provides an avenue for Deloitte to innovate and expand its service offerings in a growing tech sector."
   ],
   "news_table": [
-    ["IBM Personal Computer", "", "Wikipedia", "https://en.wikipedia.org/wiki/IBM_Personal_Computer"],
-    ["IBM Newsroom", "2025-08-26", "IBM Newsroom", "https://newsroom.ibm.com/"],
-    ["IBM - Announcements", "2025-08-18", "IBM Newsroom", "https://newsroom.ibm.com/announcements"],
-    ["IBM Newsroom - Latest News", "2025-08-18", "IBM Newsroom", "https://newsroom.ibm.com/campaign"],
-    ["IBM Newsroom - Latest News", "2025-07-08", "IBM Newsroom", "https://newsroom.ibm.com/latest-news-corporate?l=100"]
+    ["Tennessee Attorney General investigating Deloitte over diversity practices", "2023-10-10", "WKRN News 2", "https://www.wkrn.com/news/tennessee-news/tennessee-attorney-general-investigating-deloitte-over-diversity-practices/"],
+    ["Deloitte CPO Study Review - Spend Matters", "2023-10-10", "Spend Matters", "https://spendmatters.com/webinar/2025-deloitte-cpo-study-discussion/"],
+    ["Deloitte: Corporate Travel Forecast a Mixed Bag Amid Complex Conditions", "2023-10-10", "Hospitality Net", "https://www.hospitalitynet.org/news/4129018.html"],
+    ["Deloitte launches AI Infrastructure CoE to drive AI data center innovation and delivery globally", "2023-10-10", "CXO Today", "https://cxotoday.com/press-release/deloitte-launches-ai-infrastructure-coe-to-drive-ai-data-center-innovation-and-delivery-globally/"],
+    ["Deloitte", "", "Wikipedia", "https://en.wikipedia.org/wiki/Deloitte"]
   ]
 }
